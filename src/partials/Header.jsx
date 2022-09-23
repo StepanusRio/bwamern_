@@ -3,14 +3,14 @@ import BrandIcon from './IconText'
 import Button from 'components/Button'
 
 export default function Header(props) {
-  const getNavLinkClass = path =>{
-    return props.location.pathname === path ? " active": " ";
+  const getNavLinkClass = path => {
+    return props.location.pathname === path ? " active" : " ";
   }
   return (
     <header className='spacing-sm'>
       <div className='container'>
         <nav className="navbar navbar-expand-lg navbar-light">
-          <BrandIcon/>
+          <BrandIcon />
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
               <li className={`nav-item${getNavLinkClass("/")}`}>
