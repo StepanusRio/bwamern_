@@ -8,12 +8,14 @@ import Button from 'components/Button'
 import formatNumber from 'utils/formatNumber'
 
 export default function Hero(props) {
+
     function showMostPicked(){
         window.scrollTo({
-            top:props.refMostPick.current.offsetTop - 30,
+            top: props.refMostPicked.current.offsetTop - 30,
             behavior:'smooth'
         })
     }
+
   return (
     <section className="container pt-4">
         <div className="row align-items-center">
@@ -25,7 +27,7 @@ export default function Hero(props) {
                 <p className="mb-4 font-wight-light text-gray-500 w-75" style={{lineHeight:"170%"}}>
                 We provide what you need to enjoy your holiday with family. Time to make another memorable moments.
                 </p>
-                <Button className="btn px-5" hasShadow isPrimary onClick={showMostPicked}>
+                <Button className="btn px-5" hasShadow isPrimary onClick={showMostPicked} >
                     Show Me Now
                 </Button>
                 <div className="row" style={{marginTop:"80px"}}>
